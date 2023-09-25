@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/hasilpage.dart';
 import 'package:get/get.dart';
-
 import 'package:fluttergetx/controller/textfield_controller.dart';
 
 class FormTextField extends StatefulWidget {
@@ -18,33 +16,6 @@ class _FormTextFieldState extends State<FormTextField> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('TextField'),
-        actions: [
-          Container(
-            margin: const EdgeInsets.only(right: 20),
-            child: IconButton(
-              onPressed: () {
-                Get.bottomSheet(
-                  Container(
-                    width: double.infinity,
-                    height: 256,
-                    decoration: const BoxDecoration(color: Colors.white),
-                    child: Column(
-                      children: [
-                        TextButton(
-                            onPressed: () => Get.toNamed("/state"),
-                            child: const Text("State")),
-                        TextButton(
-                            onPressed: () => Get.toNamed("/tambah-kurang"),
-                            child: const Text("Tambah Kurang")),
-                      ],
-                    ),
-                  ),
-                );
-              },
-              icon: const Icon(Icons.menu),
-            ),
-          )
-        ],
       ),
       body: Center(
         child: Column(

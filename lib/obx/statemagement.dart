@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/display/getbuilder.dart';
+import 'package:fluttergetx/obx/get%20builder/getbuilder.dart';
 
 class StateManagement extends StatefulWidget {
   const StateManagement({super.key});

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/display/statemagement.dart';
-import 'package:fluttergetx/display/tambahkurang.dart';
+import 'package:fluttergetx/snackbar/listmenu/listview.dart';
+import 'package:fluttergetx/snackbar/listmenu/listviewmap.dart';
+import 'package:fluttergetx/snackbar/listmenu/tambahkurang.dart';
+import 'package:fluttergetx/snackbar/listmenu/textfield.dart';
 import 'package:fluttergetx/welcome.dart';
 import 'package:get/get.dart';
 
@@ -17,8 +19,10 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       getPages: [
         GetPage(name: "/", page: () => const MyApp()),
-        GetPage(name: "/state", page: () => const StateManagement()),
+        GetPage(name: "/textfield", page: () => const FormTextField()),
         GetPage(name: "/tambah-kurang", page: () => const TambahKurang()),
+        GetPage(name: "/list-view", page: () => const ListViewSatu()),
+        GetPage(name: "/list-view-map", page: () => const DaftarArray()),
       ],
       debugShowCheckedModeBanner: false,
       title: 'GetX',

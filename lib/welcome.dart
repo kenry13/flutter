@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/display/statemagement.dart';
-import 'package:fluttergetx/display/textfield.dart';
+import 'package:fluttergetx/obx/statemagement.dart';
+import 'package:fluttergetx/snackbar/matpel.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -67,7 +67,7 @@ class _WelcomeState extends State<Welcome> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const FormTextField(),
+                        builder: (context) => const Matpel(),
                       ),
                     );
                   },
